@@ -1,0 +1,1092 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>冀教版英语六年级 · 口语开口训练舱</title><style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:#FFF9F2;color:#2C2417;line-height:1.75;font-size:16px}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 60px}
+#gate{position:fixed;inset:0;background:#FFF9F2;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px}
+#gate .box{background:#fff;border:3px solid #2C2417;border-radius:18px;padding:32px 26px;max-width:400px;width:100%;text-align:center;box-shadow:6px 6px 0 #FFD166}
+#gate h2{margin:0 0 10px;font-size:20px}
+#gate p{color:#7A6A55;font-size:14px;margin:0 0 18px}
+#gate input{width:100%;padding:12px;border:2px solid #2C2417;border-radius:10px;font-size:16px;outline:none}
+#gate button{margin-top:14px;width:100%;padding:12px;background:#FF8FA3;border:2px solid #2C2417;border-radius:10px;
+  font-size:16px;font-weight:700;cursor:pointer;box-shadow:3px 3px 0 #2C2417}
+#gate button:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #2C2417}
+.err{color:#E4572E;min-height:22px;margin-top:10px;font-size:14px}
+.hero{background:#FFD166;border:3px solid #2C2417;border-radius:18px;padding:22px;box-shadow:5px 5px 0 #2C2417;margin-bottom:18px}
+.hero h1{margin:0 0 6px;font-size:25px;line-height:1.3}
+.hero .tag{color:#6B5B45;font-size:15px}
+.chips{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:#fff;border:2px solid #2C2417;border-radius:999px;padding:3px 11px;font-size:13px}
+.toc{background:#fff;border:3px solid #2C2417;border-radius:14px;padding:14px 16px;margin-bottom:18px}
+.toc b{display:block;margin-bottom:8px}
+.toc-links{display:flex;flex-wrap:wrap;gap:8px}
+.toc-links a{color:#2C2417;text-decoration:none;font-size:13.5px;background:#FFF3D6;border:1.5px solid #2C2417;
+  border-radius:8px;padding:3px 9px}
+.card{background:#fff;border:3px solid #2C2417;border-radius:16px;padding:18px;margin-bottom:18px;
+  box-shadow:4px 4px 0 #FFD166}
+.card h2{margin:0 0 4px;font-size:20px}
+.card .en{color:#7A6A55;font-size:14px;margin-bottom:4px}
+.card .goal{background:#FFF3D6;border-radius:10px;padding:9px 12px;font-size:14.5px;margin:10px 0}
+h3{font-size:16px;margin:18px 0 8px;padding-left:9px;border-left:5px solid #FF8FA3}
+.vocab{display:flex;flex-wrap:wrap;gap:7px}
+.vocab span{background:#F6F1E7;border:1.5px solid #2C2417;border-radius:8px;padding:3px 9px;font-size:13.5px}
+.vocab span i{color:#7A6A55;font-style:normal;font-size:12.5px}
+ol.sent{margin:0;padding-left:22px}
+ol.sent li{margin-bottom:7px}
+ol.sent .zh{color:#7A6A55;font-size:14px}
+.dlg .line{margin-bottom:9px;padding:8px 11px;border-radius:10px;background:#F6F1E7}
+.dlg .line.me{background:#FFE3E8}
+.dlg .role{font-size:12.5px;color:#7A6A55;margin-bottom:2px}
+.dlg .zh{color:#7A6A55;font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1.5px solid #2C2417;padding:6px 9px;text-align:left;vertical-align:top}
+th{background:#FFD166}
+details{background:#FBF7EF;border:2px solid #2C2417;border-radius:12px;padding:0;margin:10px 0}
+details summary{cursor:pointer;padding:10px 13px;font-weight:700;font-size:15px;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"▸ ";color:#FF8FA3}
+details[open] summary::before{content:"▾ "}
+details .body{padding:2px 14px 14px;font-size:14.5px}
+.prompt{background:#2C2417;color:#FFF3D6;border-radius:12px;padding:13px;font-size:13.5px;white-space:pre-wrap;
+  font-family:ui-monospace,Menlo,Consolas,monospace;line-height:1.65}
+.copybtn{margin-top:9px;padding:7px 15px;background:#8AC926;border:2px solid #2C2417;border-radius:9px;
+  font-size:13.5px;font-weight:700;cursor:pointer;box-shadow:2px 2px 0 #2C2417}
+.copybtn:active{transform:translate(2px,2px);box-shadow:0 0 0 #2C2417}
+.media{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.media video,.media .aud{flex:1 1 260px;min-width:0}
+.media video{width:100%;border:2px solid #2C2417;border-radius:10px;background:#000}
+.media audio{width:100%}
+.mlabel{font-size:12.5px;color:#7A6A55;margin-bottom:4px}
+.sect{background:#FFE3E8;border:3px solid #2C2417;border-radius:16px;padding:18px;margin:20px 0;box-shadow:4px 4px 0 #8AC926}
+.sect h2{margin:0 0 10px;font-size:21px}
+.note{background:#FFF3D6;border-left:5px solid #FFD166;border-radius:8px;padding:9px 12px;font-size:14px;margin:10px 0}
+footer{text-align:center;color:#7A6A55;font-size:13px;margin-top:30px;padding-top:16px;border-top:2px dashed #D9CFBC}
+.toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%);background:#2C2417;color:#fff;
+  padding:10px 20px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .25s}
+.toast.on{opacity:1}
+@media(max-width:680px){body{font-size:15.5px}.hero h1{font-size:21px}}
+</style></head><body>
+<div id="gate">
+  <div class="box">
+    <h2>🔐 请输入访问密码</h2>
+    <p>购买后密码会单独发给你。本页为私有交付页，请勿外传。</p>
+    <input id="pw" type="password" placeholder="输入密码" autocomplete="off">
+    <button onclick="tryGate()">进入产品</button>
+    <div class="err" id="err"></div>
+  </div>
+</div>
+<script>
+/* 校验值只存不可逆的加盐 SHA-256，页面内不含密码明文、也不含可逆编码 */
+const SALT="c7510de2276dc27b", HASH="90bffbb5ea40351b7b6e88d62330f83f031f95d8d3a5c825c4ad1dc942ca9c4e";
+async function sha256(t){
+  const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t));
+  return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,"0")).join("");
+}
+function unlock(){document.getElementById("gate").style.display="none";
+  try{sessionStorage.setItem("sk_product_50", "1");}catch(e){}}
+async function tryGate(){
+  const v=document.getElementById("pw").value;
+  if(await sha256(SALT+":"+v)===HASH){unlock();}
+  else{document.getElementById("err").textContent="密码错误，请核对后重试。";}
+}
+document.getElementById("pw").addEventListener("keydown",function(e){if(e.key==="Enter")tryGate();});
+try{if(sessionStorage.getItem("sk_product_50")==="1"){document.getElementById("gate").style.display="none";}}catch(e){}
+</script>
+
+<div class="wrap">
+<header class="hero">
+<h1>冀教版英语六年级 · 口语开口训练舱</h1>
+<div class="tag">六年级孩子说得清观点、讲得出理由、能连续表达一段</div>
+<div class="chips"><span class="chip">冀教版</span><span class="chip">六年级</span><span class="chip">关键练习</span><span class="chip">豆包陪练</span></div>
+</header>
+<nav class="toc"><b>📑 本页目录</b><div class="toc-links">
+<a href="#intro">📖 这是什么</a><a href="#howto">🚀 怎么用</a>
+<a href="#u1">单元1 初中准备</a>
+<a href="#u2">单元2 难忘的经历</a>
+<a href="#u3">单元3 敬佩的人</a>
+<a href="#u4">单元4 科技与日常</a>
+<a href="#u5">单元5 环保行动</a>
+<a href="#u6">单元6 志愿服务</a>
+<a href="#u7">单元7 梦想职业</a>
+<a href="#u8">单元8 毕业回忆</a>
+<a href="#placement">🎯 口语诊断与分级</a><a href="#project">🗺️ 主题口语项目</a>
+<a href="#feedback">💬 口语反馈助手</a><a href="#prompts">🤖 豆包指令包</a>
+</div></nav>
+<div class="card" id="intro"><h2>这是什么？</h2><p>专为冀教版六年级孩子设计的英语开口训练舱，起点 S3-S4。8 个贴着小升初与成长话题的单元：初中准备、难忘的经历、敬佩的人、科技与日常、环保行动、志愿服务、梦想职业、毕业回忆。每单元 8 句核心句、1 段真实对话、1 个看图说话任务、1 个原创小故事，全部配豆包陪练指令。训练重点是&quot;说成段、讲理由、能迁移&quot;：围绕熟悉话题连续说 6-10 句，用上一般过去时、be going to 和比较级，每天 15 分钟。</p><h3>适合谁</h3><p></p></div>
+<div class="card" id="howto"><h2>怎么用（3 步）</h2><ol class="sent"><li>打开本页，选一个单元</li><li>先看中文说出英文，再听句子跟读 3 遍</li><li>复制该单元豆包指令，让豆包追问到底，孩子说完理由和细节才算过，每天 15 分钟</li></ol></div>
+<div class="card" id="u1">
+<h2>单元 1 · 初中准备</h2>
+<div class="en">Getting Ready for Middle School</div>
+<div class="goal"><b>目标：</b>会说出初中生活的变化和自己要做的准备，能用 be going to 讲计划，并说清紧张和期待的理由</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit01.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit01.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>I am going to start middle school this coming September.<div class="zh">今年九月我就要上初中了。</div></li>
+<li>We will study more subjects than we did in primary school.<div class="zh">我们初中的科目会比小学时更多。</div></li>
+<li>I feel a little nervous, but I am also very excited.<div class="zh">我有点紧张，但同时也非常兴奋。</div></li>
+<li>My new school is much bigger than my primary school.<div class="zh">我的新学校比我的小学大得多。</div></li>
+<li>I am going to get up thirty minutes earlier every morning.<div class="zh">我打算每天早上早起三十分钟。</div></li>
+<li>What are you going to do to prepare for middle school?<div class="zh">你打算为上初中做些什么准备？</div></li>
+<li>My mother bought me a new school bag yesterday evening.<div class="zh">我妈妈昨天晚上给我买了一个新书包。</div></li>
+<li>I want to make more friends in my new class.<div class="zh">我想在新班级里交更多朋友。</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>middle school <i>初中</i></span>
+<span>subject <i>科目</i></span>
+<span>timetable <i>课程表</i></span>
+<span>prepare <i>准备</i></span>
+<span>nervous <i>紧张的</i></span>
+<span>confident <i>自信的</i></span>
+<span>uniform <i>校服</i></span>
+<span>challenge <i>挑战</i></span>
+<span>routine <i>作息</i></span>
+<span>friend <i>朋友</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>I am going to start middle school this September.</li>
+<li>We will study more subjects in middle school next year.</li>
+<li>My new timetable has four classes every morning.</li>
+<li>I am going to prepare my new bag this evening.</li>
+<li>I feel a little nervous about my new school life.</li>
+<li>My teacher says I should be confident and brave.</li>
+<li>Our new uniform is blue and white this year.</li>
+<li>Learning three new subjects is a big challenge for me.</li>
+<li>I need a new morning routine for middle school.</li>
+<li>I am going to make more friends in my new class.</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Mum</div>You are going to start middle school next month, Li Ming.<div class="zh">李明，你下个月就要上初中了。</div></div>
+<div class="line me"><div class="role">Li Ming</div>Yes. I feel a little nervous about the new subjects.<div class="zh">是的。新科目让我有点紧张。</div></div>
+<div class="line"><div class="role">Mum</div>That is normal. What are you most worried about?<div class="zh">这很正常。你最担心的是什么？</div></div>
+<div class="line me"><div class="role">Li Ming</div>I am worried that the homework will be much heavier.<div class="zh">我担心作业会重很多。</div></div>
+<div class="line"><div class="role">Mum</div>We are going to make a new timetable together tonight.<div class="zh">我们今晚一起做一张新的作息表吧。</div></div>
+<div class="line me"><div class="role">Li Ming</div>Good idea. I am going to get up thirty minutes earlier.<div class="zh">好主意。我打算早起三十分钟。</div></div>
+<div class="line"><div class="role">Mum</div>And I am going to buy you a bigger school bag.<div class="zh">我还要给你买一个更大的书包。</div></div>
+<div class="line me"><div class="role">Li Ming</div>Thank you, Mum. I am ready for this new challenge.<div class="zh">谢谢妈妈。我已经准备好迎接这个新挑战。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit01.svg" alt="单元1看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>一张准备上初中的书桌：桌上摊开一张写着九门科目的新课表，旁边叠着一套蓝白色校服和一个新书包，书立上摆着几本新课本，墙上贴着一张写着 Middle School, Here I Come 的彩纸。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>桌上摊开着一张新课表</td><td>Maybe the child is a little excited, because the paper on the wall says so.</td></tr>
+<tr><td>旁边叠着一套蓝白色校服</td><td>I think middle school will be busier, because the timetable has more subjects.</td></tr>
+<tr><td>桌边放着一个新书包</td><td></td></tr>
+<tr><td>书立上摆着几本新课本</td><td></td></tr>
+<tr><td>墙上贴着一张写着 Middle School, Here I Come 的彩纸</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>What are you going to do before your first day of middle school?</div>
+<div class="note"><b>无法确认：</b>我们看不出课表上的具体时间，也看不清课本的书名</div>
+<div class="note"><b>本单元语言点：</b>be going to 说计划 + 比较级说变化</div>
+<div class="note"><b>观察路线：</b>整体场景：一张准备上初中的书桌 → 人物：即将上初中的孩子 → 动作：贴彩纸、叠校服、整理新课本 → 位置：课表在桌上，彩纸在墙上 → 关键细节：蓝白色校服和写着 Middle School 的彩纸 → 合理推断：Maybe... / I think... because → 个人回应：说说自己开学前要做的准备</div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出初中准备的东西：timetable、uniform、school bag、textbooks</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：There is a ___ on the desk. / I am going to ___.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 timetable / uniform / bag / subjects / excited，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;桌面—校服—书包—墙上&quot;的顺序说 6-8 句，用上一个比较级和一个 I think... because</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答两个追问：What are you going to do first? Why?</td></tr>
+</table>
+<div class="note"><b>句框：</b>There is a new ___ on the desk.<br>I am going to ___ before the new term.<br>Middle school is ___er than primary school.<br>I think the child feels ___, because ___.</div>
+<div class="note"><b>提问阶梯：</b>What can you see on this desk?<br>Where is the new school uniform?<br>What does the paper on the wall say?<br>How does the child feel about middle school? Why?<br>What are you going to change in your daily routine?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的都是图里能看到的东西</td><td>凭空加没看到的细节</td></tr>
+<tr><td>顺序清楚</td><td>按从桌面到墙面依次说</td><td>跳来跳去</td></tr>
+<tr><td>句子完整</td><td>用 I am going to 和比较级完整句</td><td>只说单词</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think... because 说明</td><td>直接下结论不给理由</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>The New Timetable</b><br>Jenny found the new timetable on her desk last night.<br>It showed nine subjects and two evening study hours.<br>She felt nervous and wanted to hide the paper away.<br>Her brother sat down and read every line with her.<br>They coloured maths blue and English green with two pens.<br>Jenny saw that her day still had time for drawing.<br>She went to bed early and slept very well that night.</div>
+<div class="note"><b>中文大意：</b>珍妮昨晚在桌上发现了新的课程表，上面有九门科目和两个晚自习。她很紧张，想把纸藏起来。哥哥坐下来和她一起逐行读，他们用两支笔把数学涂成蓝色、英语涂成绿色。珍妮发现自己的一天里还有画画的时间。那晚她早早上床，睡得很香。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>珍妮和她的哥哥</td></tr>
+<tr><td>想要什么</td><td>想看明白初中的新课表</td></tr>
+<tr><td>遇到问题</td><td>科目变多，她紧张得想逃避</td></tr>
+<tr><td>如何解决</td><td>哥哥陪她一行行读、一起标颜色</td></tr>
+<tr><td>结果与变化</td><td>她发现还有画画的时间，安心睡了个好觉</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Jenny found the new timetable on her desk. → She felt nervous and wanted to hide it. → Her brother sat down and read it with her. → They coloured the subjects with two pens. → She saw time for drawing in her day. → She slept very well that night.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>She felt nervous and wanted to hide it.<br>Jenny found the new timetable on her desk.<br>She slept very well that night.<br>Her brother sat down and read it with her.</div>
+<div class="note"><b>关键词：</b>timetable / subjects / nervous / brother / coloured / drawing</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读关键句：She found the new timetable on her desk.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补科目和感受：She felt ___ when she saw nine ___.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 timetable / nervous / brother / coloured / drawing，按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看着故事地图（谁—想做什么—问题—结果）自己讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题《The New Timetable》独立复述，并加一句自己开学前要做的事</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Jenny found the new ___ on her desk.<br>Then, she felt ___ and wanted to hide it.<br>After that, her brother ___ it with her.<br>Finally, she slept ___ that night.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成哥哥的视角讲：My sister found her new timetable last night.<br>说感受：珍妮为什么能睡着？从故事里找一句证据<br>新结局：如果课表上没有画画的时间，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db1">请你扮演一位刚上初中的学长，和我六年级的孩子练习&quot;初中准备&quot;。规则：1）每次只问一个问题，问完等他回答，再追问 Why? 或 Can you say more?；2）答对先用中文夸具体的地方，再说下一句；3）答不出先给中文提示，还不行给完整句让他跟读两遍；4）引导他用 be going to 说计划、用比较级说变化；5）句子有语法错误不要说&quot;错&quot;，把正确句子完整说一遍让他跟读；6）最后用中文总结：他最能说清的是哪一段、哪一句明天还要练。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db1").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u2">
+<h2>单元 2 · 难忘的经历</h2>
+<div class="en">An Unforgettable Experience</div>
+<div class="goal"><b>目标：</b>会用一般过去时讲一次难忘的经历，能按时间顺序说清经过，并说出自己的感受和收获</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit02.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit02.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>Last summer, I climbed a mountain with my father.<div class="zh">去年夏天，我和爸爸爬了一座山。</div></li>
+<li>The sunrise was more beautiful than anything in my photos.<div class="zh">日出比我照片里的任何景色都美。</div></li>
+<li>I was so tired that I wanted to stop halfway.<div class="zh">我累得半路就想停下来。</div></li>
+<li>My father told me to take a short rest and go on.<div class="zh">爸爸让我休息一小会儿再继续。</div></li>
+<li>We reached the top of the hill at six in the morning.<div class="zh">我们早上六点到达了山顶。</div></li>
+<li>It was the most unforgettable experience of my primary school life.<div class="zh">那是我小学生活里最难忘的一次经历。</div></li>
+<li>Have you ever watched the sunrise from a high mountain?<div class="zh">你曾经在高山上看过日出吗？</div></li>
+<li>I took many photos, but I remember the view better.<div class="zh">我拍了很多照片，但我更记得那片景色。</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>experience <i>经历</i></span>
+<span>remember <i>记得</i></span>
+<span>climb <i>攀登</i></span>
+<span>sunrise <i>日出</i></span>
+<span>wonderful <i>精彩的</i></span>
+<span>surprise <i>惊喜</i></span>
+<span>trip <i>旅行</i></span>
+<span>photo <i>照片</i></span>
+<span>unforgettable <i>难忘的</i></span>
+<span>courage <i>勇气</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>That mountain trip was the best experience of my life.</li>
+<li>I still remember the cold morning on the mountain.</li>
+<li>We climbed the small hill before the sun came up.</li>
+<li>The sunrise over the clouds looked like a red sea.</li>
+<li>It was a wonderful day for our whole family.</li>
+<li>My parents planned a small surprise for my birthday.</li>
+<li>Our school trip to the mountain took about six hours.</li>
+<li>This old photo always makes me smile at once.</li>
+<li>That was the most unforgettable day of my primary school.</li>
+<li>That day taught me a lesson about courage and patience.</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Miss Zhang</div>Who would like to share an unforgettable experience with us?<div class="zh">谁愿意和大家分享一次难忘的经历？</div></div>
+<div class="line me"><div class="role">Li Ming</div>I climbed a mountain with my father last summer.<div class="zh">去年夏天我和爸爸爬了一座山。</div></div>
+<div class="line"><div class="role">Miss Zhang</div>That sounds wonderful. How long did it take you?<div class="zh">听起来很棒。你们花了多长时间？</div></div>
+<div class="line me"><div class="role">Li Ming</div>About six hours. I wanted to stop halfway up the mountain.<div class="zh">大约六个小时。爬到半山腰我想放弃了。</div></div>
+<div class="line"><div class="role">Miss Zhang</div>What made you keep going at that difficult moment?<div class="zh">在那样困难的时候，是什么让你坚持下来的？</div></div>
+<div class="line me"><div class="role">Li Ming</div>My father walked beside me and told me old stories.<div class="zh">爸爸走在我身边，给我讲老故事。</div></div>
+<div class="line"><div class="role">Wang Mei</div>Did you watch the sunrise from the top of the mountain?<div class="zh">你们在山顶看日出了吗？</div></div>
+<div class="line me"><div class="role">Li Ming</div>Yes, we did. It was more beautiful than any photo.<div class="zh">看了。比任何照片都美。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit02.svg" alt="单元2看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>一张山顶日出的照片：几个孩子站在山顶的石头上，太阳刚从云海后面升起，天空是橙红色的，其中一个孩子举着相机，石头上放着一个背包和一壶水。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>几个孩子站在山顶的石头上</td><td>Maybe they started climbing very early, because the sun is just coming up.</td></tr>
+<tr><td>太阳刚从云海后面升起</td><td>I think they felt proud, because they reached the top before sunrise.</td></tr>
+<tr><td>天空是橙红色的</td><td></td></tr>
+<tr><td>一个孩子举着相机</td><td></td></tr>
+<tr><td>石头上放着一个背包和一壶水</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>What is the most unforgettable experience in your life so far?</div>
+<div class="note"><b>无法确认：</b>我们看不出他们爬了多久，也听不到他们在说什么</div>
+<div class="note"><b>本单元语言点：</b>一般过去时讲经历 + 比较级说感受</div>
+<div class="note"><b>观察路线：</b>整体场景：山顶的日出 → 人物：几个爬到山顶的孩子 → 动作：拍照、看日出、放下背包 → 位置：孩子在石头上，太阳在云海后面 → 关键细节：橙红色的天空和举起的相机 → 合理推断：Maybe... / I think... because → 个人回应：说说自己最难忘的一次经历</div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出山和日出的词：mountain、top、sunrise、clouds、camera</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：They climbed the ___ last ___. / The sunrise was ___.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 mountain / top / sunrise / camera / tired，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;天空—云海—孩子—石头&quot;的顺序说 6-8 句，用上一个比较级和一个 I think... because</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答两个追问：When did they start climbing? How did they feel?</td></tr>
+</table>
+<div class="note"><b>句框：</b>They climbed the mountain last ___.<br>The sunrise was more beautiful than ___.<br>I think they felt ___, because ___.<br>It took them about ___ hours to reach the top.</div>
+<div class="note"><b>提问阶梯：</b>What can you see in this photo?<br>Where is the sun?<br>What is the child doing with the camera?<br>Do you think the climb was easy? Why?<br>What unforgettable experience do you want to share?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的都是图里能看到的东西</td><td>凭空加没看到的细节</td></tr>
+<tr><td>顺序清楚</td><td>按从天空到人物依次说</td><td>跳来跳去</td></tr>
+<tr><td>句子完整</td><td>用一般过去时的完整句，动词过去式说准</td><td>只说单词或半句</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think... because 说明</td><td>直接下结论不给理由</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>The Last Hundred Steps</b><br>Li Ming climbed a mountain with his father last summer.<br>After three hours, his legs felt heavy and he sat down.<br>He said he could not walk another single step.<br>His father opened a bottle of water and waited quietly.<br>Then he told Li Ming to count one hundred steps aloud.<br>Li Ming counted loudly and forgot about his tired legs.<br>When he looked up, they were standing on the top.</div>
+<div class="note"><b>中文大意：</b>去年夏天，李明和爸爸一起爬山。走了三个小时，他的腿沉得不行，一屁股坐下来说自己再也走不动了。爸爸打开一瓶水，安静地等着。然后他让李明大声数一百步。李明一边数一边忘了腿酸。等他抬起头，他们已经站在山顶了。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>李明和他的爸爸</td></tr>
+<tr><td>想要什么</td><td>想爬到山顶看日出</td></tr>
+<tr><td>遇到问题</td><td>爬了三小时腿发沉，想放弃</td></tr>
+<tr><td>如何解决</td><td>爸爸让他大声数一百步</td></tr>
+<tr><td>结果与变化</td><td>数着数着就到了山顶</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Li Ming climbed a mountain with his father. → His legs felt heavy after three hours. → He said he could not walk any more. → His father told him to count one hundred steps. → He counted and forgot about his tired legs. → They reached the top of the mountain.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>They reached the top of the mountain.<br>Li Ming climbed a mountain with his father.<br>His legs felt heavy after three hours.<br>His father told him to count one hundred steps.</div>
+<div class="note"><b>关键词：</b>mountain / father / heavy / steps / counted / top</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读关键句：He counted one hundred steps aloud.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补人物和感受：His legs felt ___ after ___ hours.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 mountain / father / heavy / steps / top，按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看着故事地图（谁—想做什么—问题—结果）自己讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题《The Last Hundred Steps》独立复述，并加一句自己坚持下来的一件事</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Li Ming climbed a mountain with his ___.<br>Then, his legs felt ___ after three hours.<br>After that, his father told him to count ___ steps.<br>Finally, they were standing on the ___.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成爸爸的视角讲：My son wants to stop halfway up the mountain.<br>说感受：李明为什么能走到山顶？从故事里找一句证据<br>新结局：如果爸爸背着他上山，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db2">请你扮演一位旅行节目的主持人，和我六年级的孩子练习&quot;难忘的经历&quot;。规则：1）每次只问一个问题，问完等他回答，再追问 When? / How did you feel?；2）答对先用中文夸具体的地方，再说下一句；3）答不出先给中文提示，还不行给完整句让他跟读两遍；4）要求他用一般过去时按&quot;什么时候、和谁、做了什么、感受如何&quot;讲 5-6 句；5）句子有语法错误不要说&quot;错&quot;，把正确句子完整说一遍让他跟读；6）最后用中文总结：过去式用得怎么样、哪一句明天还要练。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db2").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u3">
+<h2>单元 3 · 敬佩的人</h2>
+<div class="en">Someone I Admire</div>
+<div class="goal"><b>目标：</b>会介绍自己敬佩的一个人，能用具体事例说明敬佩的理由，并说出自己想向他学到什么</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit03.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit03.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>The person I admire most is my grandpa, a very kind man.<div class="zh">我最敬佩的人是我爷爷，一个非常善良的人。</div></li>
+<li>He gets up at five every morning to help our neighbours.<div class="zh">他每天早上五点起床去帮助邻居。</div></li>
+<li>My hero is an ordinary worker with a warm and generous heart.<div class="zh">我心目中的英雄是一位热心又慷慨的普通劳动者。</div></li>
+<li>She was braver than anyone else during the heavy storm.<div class="zh">在那场大雨里，她比任何人都勇敢。</div></li>
+<li>I want to learn from her patience and her quiet courage.<div class="zh">我想学习她的耐心和那份安静的勇气。</div></li>
+<li>Who do you admire most in your daily life?<div class="zh">在日常生活中你最敬佩谁？</div></li>
+<li>My teacher is the most patient person in our school.<div class="zh">我的老师是我们学校最有耐心的人。</div></li>
+<li>Because of her, I started helping my classmates every week.<div class="zh">因为她，我开始每周都帮助同学。</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>admire <i>钦佩</i></span>
+<span>hero <i>英雄</i></span>
+<span>patient <i>有耐心的</i></span>
+<span>hard-working <i>勤劳的</i></span>
+<span>kind <i>善良的</i></span>
+<span>brave <i>勇敢的</i></span>
+<span>example <i>榜样</i></span>
+<span>respect <i>尊重</i></span>
+<span>ordinary <i>普通的</i></span>
+<span>learn <i>学习</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>I admire my grandma, because she never stops learning.</li>
+<li>My hero is a street cleaner near our school gate.</li>
+<li>My teacher is patient with every student in her class.</li>
+<li>My mother is the most hard-working person I know.</li>
+<li>He is kind to everyone he meets on the street.</li>
+<li>The cleaners were brave during the heavy storm last year.</li>
+<li>She sets a good example for all of us.</li>
+<li>We should respect people who help others every day.</li>
+<li>My hero is an ordinary worker with a warm heart.</li>
+<li>I want to learn from her patience and quiet courage.</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Miss Zhang</div>Today we will talk about the person we admire most.<div class="zh">今天我们来聊聊自己最敬佩的人。</div></div>
+<div class="line me"><div class="role">Wang Mei</div>I admire my grandma most, because she never stops learning.<div class="zh">我最敬佩我奶奶，因为她从不停止学习。</div></div>
+<div class="line"><div class="role">Li Ming</div>Really? What does she do every day at home?<div class="zh">真的吗？她每天在家做什么？</div></div>
+<div class="line me"><div class="role">Wang Mei</div>She reads the newspaper and grows vegetables in our small garden.<div class="zh">她看报纸，还在我们的小花园里种菜。</div></div>
+<div class="line"><div class="role">Li Ming</div>My hero is a street cleaner near our school gate.<div class="zh">我心目中的英雄是我们校门口的一位环卫工人。</div></div>
+<div class="line me"><div class="role">Miss Zhang</div>Why do you admire him so much, Li Ming?<div class="zh">李明，你为什么这么敬佩他？</div></div>
+<div class="line"><div class="role">Li Ming</div>He works in the rain and keeps our street clean every day.<div class="zh">他下雨天也工作，每天都让我们的街道保持干净。</div></div>
+<div class="line me"><div class="role">Wang Mei</div>I want to learn from him and help others more often.<div class="zh">我想向他学习，更经常地帮助别人。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit03.svg" alt="单元3看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>一幅雨天的社区场景：一位穿着橙色马甲的环卫工人正在雨中扫地，旁边一个孩子举着一把蓝色的大伞为他遮雨，远处一位老奶奶在自家小花园里给青菜浇水。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>一位环卫工人穿着橙色马甲在扫地</td><td>Maybe the child knows the cleaner, because he is holding an umbrella over him.</td></tr>
+<tr><td>天正下着雨</td><td>I think the cleaner works very hard, because he is working in the rain.</td></tr>
+<tr><td>一个孩子举着一把蓝色的大伞</td><td></td></tr>
+<tr><td>远处有一位老奶奶</td><td></td></tr>
+<tr><td>老奶奶正在给青菜浇水</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>Who do you admire most around you? What does that person do?</div>
+<div class="note"><b>无法确认：</b>我们听不到他们在说什么，也看不出这位工人工作了多久</div>
+<div class="note"><b>本单元语言点：</b>I admire... because... / 一般过去时举例</div>
+<div class="note"><b>观察路线：</b>整体场景：雨天的社区街道 → 人物：环卫工人、举伞的孩子和老奶奶 → 动作：扫地、撑伞、浇菜 → 位置：工人在路中间，老奶奶在远处花园里 → 关键细节：橙色马甲和蓝色的大伞 → 合理推断：Maybe... / I think... because → 个人回应：说说自己敬佩的人和他做的事</div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出人物和动作：cleaner、child、umbrella、grandma、street</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：The cleaner is ___ing in the rain. / I admire ___ because ___.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 rain / cleaner / umbrella / kind / grandma，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;工人—孩子—远处&quot;的顺序说 6-8 句，用上一个比较级和一个 I think... because</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答两个追问：Who do you admire? Why does the child help him?</td></tr>
+</table>
+<div class="note"><b>句框：</b>The cleaner is ___ing in the heavy rain.<br>The child is holding a big ___ over him.<br>I admire ___, because he/she ___ every day.<br>I think the cleaner feels ___, because ___.</div>
+<div class="note"><b>提问阶梯：</b>What can you see on this rainy street?<br>What is the cleaner doing in the rain?<br>Why is the child holding an umbrella over him?<br>How does the cleaner feel at that moment? Why?<br>Who do you admire most in your neighbourhood? Why?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的都是图里能看到的人和动作</td><td>凭空加没看到的人</td></tr>
+<tr><td>顺序清楚</td><td>按从近到远依次说</td><td>跳来跳去</td></tr>
+<tr><td>句子完整</td><td>用 I admire... because 完整句</td><td>只说单词</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think... because 说明</td><td>直接下结论不给理由</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>The Blue Umbrella</b><br>It rained hard on Li Ming&#x27;s way home last Tuesday.<br>A street cleaner was still working near the school gate.<br>Li Ming ran home and took a big blue umbrella.<br>He ran back and held it over the cleaner&#x27;s head.<br>The cleaner smiled and said thank you in a loud voice.<br>Li Ming&#x27;s shoes were wet, but he felt warm inside.<br>The next day, three classmates brought their own umbrellas too.</div>
+<div class="note"><b>中文大意：</b>上周二李明回家的路上雨下得很大，一位环卫工人还在校门口工作。李明跑回家拿了把蓝色的大伞，又跑回去撑在工人头顶。工人笑着大声道谢。李明的鞋湿了，可心里很暖。第二天，三个同学也带来了自己的伞。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>李明和一位环卫工人</td></tr>
+<tr><td>想要什么</td><td>想在雨里为工人撑一把伞</td></tr>
+<tr><td>遇到问题</td><td>雨太大，工人还在扫地</td></tr>
+<tr><td>如何解决</td><td>他跑回家取伞又跑回来</td></tr>
+<tr><td>结果与变化</td><td>工人道谢，第二天更多同学加入了</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>It rained hard after school last Tuesday. → Li Ming saw a cleaner working in the rain. → He ran home and took a big umbrella. → He held the umbrella over the cleaner&#x27;s head. → The cleaner thanked him with a smile. → Three classmates brought umbrellas the next day.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>He held the umbrella over the cleaner&#x27;s head.<br>It rained hard after school last Tuesday.<br>Three classmates brought umbrellas the next day.<br>He ran home and took a big umbrella.</div>
+<div class="note"><b>关键词：</b>rain / cleaner / umbrella / thank you / wet / classmates</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读关键句：He held the umbrella over the cleaner&#x27;s head.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补人物和动作：He ran home and took a big ___.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 rain / cleaner / umbrella / thank you / classmates，按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看着故事地图（谁—想做什么—问题—结果）自己讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题《The Blue Umbrella》独立复述，并加一句自己帮助过别人的小事</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, it rained ___ after school last Tuesday.<br>Then, Li Ming saw a cleaner ___ in the rain.<br>After that, he held a big ___ over the cleaner.<br>Finally, three ___ brought umbrellas the next day.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成环卫工人的视角讲：A boy held a blue umbrella over me.<br>说感受：李明为什么鞋湿了还觉得暖？从故事里找一句证据<br>新结局：如果那天没下雨，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db3">请你扮演一位做人物采访的小记者，和我六年级的孩子练习&quot;敬佩的人&quot;。规则：1）每次只问一个问题，问完等他回答，再追问 Why? 和 Can you give me an example?；2）答对先用中文夸具体的地方，再说下一句；3）答不出先给中文提示，还不行给完整句让他跟读两遍；4）要求他用一件具体的小事说明敬佩的理由；5）句子有语法错误不要说&quot;错&quot;，把正确句子完整说一遍让他跟读；6）最后用中文总结：他的理由句说清了没有、哪一句明天还要练。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db3").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u4">
+<h2>单元 4 · 科技与日常</h2>
+<div class="en">Technology and Daily Life</div>
+<div class="goal"><b>目标：</b>会谈论科技给生活带来的变化，能用比较级说利弊，并讲一段家里人学用科技的小事</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit04.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit04.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>I use a dictionary app to look up new English words.<div class="zh">我用一个词典软件查新的英语单词。</div></li>
+<li>My grandma learned to send messages with her smartphone last year.<div class="zh">我奶奶去年学会了用智能手机发消息。</div></li>
+<li>The internet is more useful for learning than for playing games.<div class="zh">互联网用来学习比用来玩游戏更有用。</div></li>
+<li>We had an online class meeting last Friday evening.<div class="zh">上周五晚上我们开了一次线上班会。</div></li>
+<li>I am going to make a short video about our school garden.<div class="zh">我打算拍一段关于我们学校小花园的短片。</div></li>
+<li>Too much screen time is worse for your eyes than reading.<div class="zh">看屏幕太久比看书更伤眼睛。</div></li>
+<li>Robots can clean the floor faster than people in big halls.<div class="zh">在大厅里，机器人擦地比人快。</div></li>
+<li>Do you think technology makes our life easier or harder?<div class="zh">你觉得科技让我们的生活更轻松还是更麻烦？</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>technology <i>科技</i></span>
+<span>smartphone <i>智能手机</i></span>
+<span>internet <i>网络</i></span>
+<span>app <i>应用软件</i></span>
+<span>robot <i>机器人</i></span>
+<span>useful <i>有用的</i></span>
+<span>message <i>消息</i></span>
+<span>online <i>线上的</i></span>
+<span>screen <i>屏幕</i></span>
+<span>invent <i>发明</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>Technology changes the way we study and talk.</li>
+<li>My mother uses her smartphone to buy fresh vegetables.</li>
+<li>We use the internet to find useful learning videos.</li>
+<li>This small app helps me remember new English words.</li>
+<li>A small robot cleans the floor in our library.</li>
+<li>A map app is useful when you visit a new city.</li>
+<li>I send a message to my cousin every weekend.</li>
+<li>Our class had an online meeting last Friday evening.</li>
+<li>I rest my eyes after I look at a screen for long.</li>
+<li>Who invented the first telephone in the whole world?</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Grandpa</div>Li Ming, can you teach me to send a voice message?<div class="zh">李明，你能教我发语音消息吗？</div></div>
+<div class="line me"><div class="role">Li Ming</div>Sure, Grandpa. Touch this small button and start talking.<div class="zh">当然，爷爷。按这个小按钮，然后开始说话。</div></div>
+<div class="line"><div class="role">Grandpa</div>Like this? I want to send one to your mother.<div class="zh">这样吗？我想给你妈妈发一条。</div></div>
+<div class="line me"><div class="role">Li Ming</div>Yes. Speaking is much easier than writing for you now.<div class="zh">是的。对您来说，说话现在比写字容易多了。</div></div>
+<div class="line"><div class="role">Grandpa</div>Technology is wonderful. I learned to take photos too.<div class="zh">科技真奇妙。我还学会了拍照。</div></div>
+<div class="line me"><div class="role">Li Ming</div>Great. Are you going to learn to buy things online?<div class="zh">太棒了。您打算学网上买东西吗？</div></div>
+<div class="line"><div class="role">Grandpa</div>Maybe next month. I do not want to spend too much time on it.<div class="zh">也许下个月吧。我不想在这上面花太多时间。</div></div>
+<div class="line me"><div class="role">Li Ming</div>I agree. Screens are bad for our eyes after a long time.<div class="zh">我同意。看屏幕太久对眼睛不好。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit04.svg" alt="单元4看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>一幅家里的科技场景：爷爷戴着老花镜坐在沙发上，正对着手机说话，旁边一个孩子举着平板给他看一张老照片，桌上放着一个扫地的小机器人和一台打开的笔记本电脑。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>爷爷戴着老花镜坐在沙发上</td><td>Maybe the child is teaching his grandpa, because he is standing close to him.</td></tr>
+<tr><td>爷爷正对着手机说话</td><td>I think the grandpa is enjoying it, because he is smiling at the screen.</td></tr>
+<tr><td>一个孩子举着一台平板</td><td></td></tr>
+<tr><td>桌上放着一个小机器人</td><td></td></tr>
+<tr><td>桌上有一台打开的笔记本电脑</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>What does technology help your family do every day?</div>
+<div class="note"><b>无法确认：</b>我们听不到手机里说了什么，也看不出平板上是哪张照片</div>
+<div class="note"><b>本单元语言点：</b>比较级说利弊 + 一般过去时讲变化</div>
+<div class="note"><b>观察路线：</b>整体场景：家里的客厅 → 人物：爷爷和一个孩子 → 动作：发消息、看平板、打扫地面 → 位置：爷爷在沙发上，电脑和小机器人在桌上 → 关键细节：老花镜和小机器人 → 合理推断：Maybe... / I think... because → 个人回应：说说科技帮自己家做了什么</div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出科技产品：smartphone、tablet、laptop、robot、app</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：I can see a ___. / The grandpa is ___ing on his ___.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 grandpa / phone / tablet / robot / photos，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;爷爷—孩子—桌面&quot;的顺序说 6-8 句，用上一个比较级和一个 I think... because</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答两个追问：What is technology good for in your family?</td></tr>
+</table>
+<div class="note"><b>句框：</b>The grandpa is ___ing on his smartphone.<br>There is a small ___ on the table.<br>Technology is ___er than it was before.<br>I think the grandpa feels ___, because ___.</div>
+<div class="note"><b>提问阶梯：</b>What can you see in this living room?<br>What is the grandpa doing with his phone?<br>Where is the small robot?<br>How does the grandpa feel about technology? Why?<br>What do you use the internet for every week?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的都是图里能看到的东西</td><td>凭空加没看到的细节</td></tr>
+<tr><td>顺序清楚</td><td>按从人物到桌面依次说</td><td>跳来跳去</td></tr>
+<tr><td>句子完整</td><td>用 ...is ___ing 和比较级完整句</td><td>只说单词</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think... because 说明</td><td>直接下结论不给理由</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>Grandpa&#x27;s First Voice Message</b><br>Grandpa wanted to send a message to his old friend.<br>He could not write the small letters on the phone screen.<br>Li Ming showed him a small yellow voice button on the phone.<br>Grandpa held the phone far away and spoke very loudly.<br>His old friend answered with a voice message and one photo.<br>Grandpa laughed and listened to that message three times.<br>Now he sends one message every Sunday morning.</div>
+<div class="note"><b>中文大意：</b>爷爷想给老朋友发一条消息，可他看不清手机屏幕上小小的字。李明给他看了手机上那个黄色的小语音按钮。爷爷把手机拿得远远的，说得很大声。老朋友回了一条语音和一张照片，爷爷笑着听了三遍。现在他每个星期天早上都会发一条。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>爷爷和李明</td></tr>
+<tr><td>想要什么</td><td>想给老朋友发一条消息</td></tr>
+<tr><td>遇到问题</td><td>看不清屏幕上的小字，不会打字</td></tr>
+<tr><td>如何解决</td><td>李明教他用语音按钮，他试着说</td></tr>
+<tr><td>结果与变化</td><td>朋友回了语音和照片，爷爷从此每周都发</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Grandpa wanted to send a message to his friend. → He could not write the small letters. → Li Ming showed him the voice button. → He held the phone far away and spoke loudly. → His friend answered with a photo. → He now sends a message every Sunday.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>He now sends a message every Sunday.<br>Grandpa wanted to send a message to his friend.<br>Li Ming showed him the voice button.<br>He could not write the small letters.</div>
+<div class="note"><b>关键词：</b>message / screen / voice button / loudly / photo / Sunday</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读关键句：He held the phone far away and spoke loudly.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补人物和动作：Li Ming showed his grandpa the ___ button.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 message / screen / button / loudly / photo，按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看着故事地图（谁—想做什么—问题—结果）自己讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题《Grandpa&#x27;s First Voice Message》独立复述，并加一句自己教会家里人的一件事</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Grandpa wanted to send a ___ to his friend.<br>Then, he could not write the small ___.<br>After that, Li Ming showed him the ___ button.<br>Finally, he sends a message every ___ morning.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成爷爷的视角讲：My grandson showed me a small yellow button.<br>说感受：爷爷为什么听了三遍？从故事里找一句证据<br>新结局：如果朋友没有回消息，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db4">请你扮演一位做科技节目访谈的主持人，和我六年级的孩子练习&quot;科技与日常&quot;。规则：1）每次只问一个问题，问完等他回答，再追问 Why? 或 Can you give an example?；2）答对先用中文夸具体的地方，再说下一句；3）答不出先给中文提示，还不行给完整句让他跟读两遍；4）引导他用比较级说利弊，用一般过去时讲一次变化；5）句子有语法错误不要说&quot;错&quot;，把正确句子完整说一遍让他跟读；6）最后用中文总结：他的理由句说清了没有、哪一句明天还要练。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db4").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u5">
+<h2>单元 5 · 环保行动</h2>
+<div class="en">Environment Protection in Action</div>
+<div class="goal"><b>目标：</b>会说出具体的环保做法，能用一般过去时讲一次环保行动，并说明下一步打算做什么</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit05.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit05.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>We sorted the rubbish into three different bins last week.<div class="zh">上周我们把垃圾分到了三个不同的桶里。</div></li>
+<li>Air pollution was worse here last winter than this year.<div class="zh">去年冬天这里的空气污染比今年严重。</div></li>
+<li>I always carry a reusable bag when I go shopping.<div class="zh">我去买东西时总是带着一个环保袋。</div></li>
+<li>Our class planted thirty young trees near the river last spring.<div class="zh">去年春天我们班在河边种了三十棵小树。</div></li>
+<li>Turning off the lights saves more energy than you think.<div class="zh">随手关灯省下的电比你想象的多。</div></li>
+<li>I am going to ride my bike to school every Friday.<div class="zh">我打算每周五骑自行车上学。</div></li>
+<li>Solar energy is much cleaner than coal for our city.<div class="zh">对我们的城市来说，太阳能比煤炭干净得多。</div></li>
+<li>What small action are you going to take for the environment?<div class="zh">你打算为环境做一件什么小事？</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>environment <i>环境</i></span>
+<span>pollution <i>污染</i></span>
+<span>waste <i>浪费</i></span>
+<span>rubbish <i>垃圾</i></span>
+<span>save <i>节约</i></span>
+<span>reusable <i>可重复使用的</i></span>
+<span>energy <i>能源</i></span>
+<span>protect <i>保护</i></span>
+<span>plant <i>种植</i></span>
+<span>volunteer <i>志愿者</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>We should protect the environment in our daily life.</li>
+<li>Air pollution is worse in winter than in summer here.</li>
+<li>Wasting food is a bad habit in our school dining hall.</li>
+<li>We sorted the rubbish into three different bins.</li>
+<li>Turning off the lights saves energy every single day.</li>
+<li>I carry a reusable bag when I go shopping.</li>
+<li>Solar energy is cleaner than coal for our city.</li>
+<li>Everyone can protect the earth with small daily actions.</li>
+<li>Our class planted thirty young trees last spring.</li>
+<li>A young volunteer showed us how to sort the waste.</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Miss Zhang</div>Our class is going to plan a green week. Any ideas?<div class="zh">我们班要策划一个&quot;绿色周&quot;。有什么想法吗？</div></div>
+<div class="line me"><div class="role">Wang Mei</div>We can sort the rubbish into three bins in our classroom.<div class="zh">我们可以在教室里把垃圾分成三类。</div></div>
+<div class="line"><div class="role">Li Ming</div>I am going to ride my bike to school every Friday.<div class="zh">我打算每周五骑车上学。</div></div>
+<div class="line me"><div class="role">Miss Zhang</div>Good. What did you do about waste last term?<div class="zh">很好。上学期你们在垃圾方面做了什么？</div></div>
+<div class="line"><div class="role">Wang Mei</div>We collected old paper and made ten new notebooks.<div class="zh">我们收集旧纸，做成了十本新本子。</div></div>
+<div class="line me"><div class="role">Li Ming</div>We also planted thirty young trees near the small river.<div class="zh">我们还在小河附近种了三十棵小树。</div></div>
+<div class="line"><div class="role">Miss Zhang</div>That was wonderful. What are you going to do this time?<div class="zh">太棒了。这一次你们打算做什么？</div></div>
+<div class="line me"><div class="role">Wang Mei</div>We are going to tell younger students why sorting matters.<div class="zh">我们打算告诉低年级同学为什么分类很重要。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit05.svg" alt="单元5看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>教室一角的环保区：墙边并排放着蓝、绿、灰三个垃圾桶，上方贴着一张手绘的垃圾分类表，桌上摆着几本用旧纸做成的笔记本和一个写着 Save Water 的水壶，窗台上放着两盆小绿植。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>墙边并排放着三个垃圾桶</td><td>Maybe the students made the notebooks themselves, because the paper looks old.</td></tr>
+<tr><td>三个垃圾桶是蓝色、绿色和灰色的</td><td>I think this class cares about the environment, because there are three bins.</td></tr>
+<tr><td>上方贴着一张手绘的分类表</td><td></td></tr>
+<tr><td>桌上摆着几本旧纸做成的笔记本</td><td></td></tr>
+<tr><td>桌上有一个写着 Save Water 的水壶</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>What do you do at school to protect the environment?</div>
+<div class="note"><b>无法确认：</b>我们看不出每个桶里装了什么，也看不出分类表上写了哪些内容</div>
+<div class="note"><b>本单元语言点：</b>一般过去时讲行动 + be going to 说下一步</div>
+<div class="note"><b>观察路线：</b>整体场景：教室一角的环保区 → 人物：布置这个角落的学生们 → 动作：分类垃圾桶、贴表格、做本子 → 位置：垃圾桶靠墙，本子和水壶在桌上 → 关键细节：三个不同颜色的桶和 Save Water 水壶 → 合理推断：Maybe... / I think... because → 个人回应：说说自己在学校做的环保小事</div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出环保物品：bins、notebooks、bottle、plants、paper</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：There are ___ bins near the wall. / We ___ last ___.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 bins / paper / notebooks / water / plants，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;墙边—表格—桌面—窗台&quot;的顺序说 6-8 句，用上一个比较级和一个 I think... because</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答两个追问：What did this class do last term? Why?</td></tr>
+</table>
+<div class="note"><b>句框：</b>There are ___ bins near the wall.<br>The students made ___ out of old paper.<br>We ___ thirty young trees last spring.<br>I think this class ___, because ___.</div>
+<div class="note"><b>提问阶梯：</b>What can you see in this corner?<br>How many bins are there and what colours are they?<br>What is on the desk?<br>Why did they make these notebooks? What do you think?<br>What are you going to do for the environment next month?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的都是图里能看到的东西</td><td>凭空加没看到的细节</td></tr>
+<tr><td>顺序清楚</td><td>按从墙到桌面依次说</td><td>跳来跳去</td></tr>
+<tr><td>句子完整</td><td>用一般过去时和 be going to 完整句</td><td>只说单词</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think... because 说明</td><td>直接下结论不给理由</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>Three Bins in the Corner</b><br>Our classroom had only one small bin for everything last term.<br>Li Ming saw paper, bottles and food inside the same black bag.<br>He asked his teacher for two more bins one afternoon.<br>His classmates helped him paint three colourful signs for the bins.<br>Every day, one student checked the bins after lunch quietly.<br>After two weeks, the classroom produced much less rubbish than before.<br>Other classes came and asked them for advice.</div>
+<div class="note"><b>中文大意：</b>上学期我们教室只有一个小垃圾桶。李明看到纸、瓶子和食物都装在同一个黑袋子里，一天下午他向老师又要了两个桶。同学们帮他给三个桶画了彩色的标识牌。每天午饭后都有一名同学检查。两周之后，教室产生的垃圾比以前少多了。其他班还来向他们请教。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>李明和他的同学</td></tr>
+<tr><td>想要什么</td><td>想让教室的垃圾真正分类</td></tr>
+<tr><td>遇到问题</td><td>所有垃圾都混在一个黑袋子里</td></tr>
+<tr><td>如何解决</td><td>他向老师要了两个桶，全班一起画标识牌</td></tr>
+<tr><td>结果与变化</td><td>两周后垃圾明显减少，别的班也来请教</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>The classroom had only one small bin last term. → Li Ming saw paper and food in one bag. → He asked his teacher for two more bins. → His classmates painted three colourful signs. → One student checked the bins after lunch every day. → The classroom produced much less rubbish.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>He asked his teacher for two more bins.<br>The classroom had only one small bin last term.<br>The classroom produced much less rubbish.<br>His classmates painted three colourful signs.</div>
+<div class="note"><b>关键词：</b>bin / paper / bottles / signs / lunch / rubbish</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读关键句：He asked his teacher for two more bins.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补物品和动作：They put ___ and ___ in different bins.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 bin / paper / signs / lunch / rubbish，按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看着故事地图（谁—想做什么—问题—结果）自己讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题《Three Bins in the Corner》独立复述，并加一句自己能在家做的环保小事</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, the classroom had only one ___ last term.<br>Then, Li Ming asked his teacher for two more ___.<br>After that, his classmates painted three ___ signs.<br>Finally, the classroom produced much ___ rubbish.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成班主任的视角讲：One of my students asked me for two more bins.<br>说感受：为什么别的班会来请教？从故事里找一句证据<br>新结局：如果只有李明一个人做，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db5">请你扮演一位社区环保活动的组织者，和我六年级的孩子练习&quot;环保行动&quot;。规则：1）每次只问一个问题，问完等他回答，再追问 Why? 或 What else?；2）答对先用中文夸具体的地方，再说下一句；3）答不出先给中文提示，还不行给完整句让他跟读两遍；4）要求他用一般过去时讲一次自己做过的环保行动，再用 be going to 说下一步；5）句子有语法错误不要说&quot;错&quot;，把正确句子完整说一遍让他跟读；6）最后用中文总结：过去式用得怎么样、哪一句明天还要练。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db5").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u6">
+<h2>单元 6 · 志愿服务</h2>
+<div class="en">Volunteering and Helping Others</div>
+<div class="goal"><b>目标：</b>会讲一次志愿服务的经历，能说清做了什么、遇到什么困难、学到了什么</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit06.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit06.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>I worked as a volunteer at our school library last term.<div class="zh">上学期我在学校图书馆当了一回志愿者。</div></li>
+<li>We helped some old people clean the community garden yesterday.<div class="zh">昨天我们帮几位老人清理了社区花园。</div></li>
+<li>Our club organised a small book sale for a village school.<div class="zh">我们社团为乡村学校组织了一次小型义卖。</div></li>
+<li>A small act of kindness can change someone&#x27;s whole day.<div class="zh">一个小小的善举能改变一个人的一整天。</div></li>
+<li>We visit a lonely grandpa in our neighbourhood every Sunday morning.<div class="zh">我们每周日早上去看望社区里一位孤单的爷爷。</div></li>
+<li>You need to be more patient when you teach an old person.<div class="zh">教老人做事时，你需要更有耐心。</div></li>
+<li>I am going to help at the community centre next Saturday.<div class="zh">下周六我打算去社区中心帮忙。</div></li>
+<li>Community service taught me how to listen to other people.<div class="zh">社区服务教会了我怎样倾听别人。</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>volunteer <i>志愿者</i></span>
+<span>community <i>社区</i></span>
+<span>help <i>帮助</i></span>
+<span>donate <i>捐赠</i></span>
+<span>organise <i>组织</i></span>
+<span>kindness <i>善意</i></span>
+<span>patient <i>有耐心的</i></span>
+<span>service <i>服务</i></span>
+<span>teamwork <i>团队合作</i></span>
+<span>lonely <i>孤单的</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>I worked as a volunteer at our school library.</li>
+<li>Our community needs young helpers every weekend morning.</li>
+<li>We helped some old people clean the community garden.</li>
+<li>We donated two hundred books to a small village school.</li>
+<li>Our club organised a small book sale last month.</li>
+<li>A small act of kindness can change someone&#x27;s whole day.</li>
+<li>You need to be patient when you teach an old person.</li>
+<li>Community service taught me how to listen to others.</li>
+<li>That project taught me the real meaning of teamwork.</li>
+<li>We visit a lonely grandpa in our neighbourhood every Sunday.</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Miss Zhang</div>Did anyone do volunteer work during the last holiday?<div class="zh">上个假期有人做过志愿服务吗？</div></div>
+<div class="line me"><div class="role">Wang Mei</div>Yes. I worked at the community library for three mornings.<div class="zh">有。我在社区图书馆做了三个上午。</div></div>
+<div class="line"><div class="role">Li Ming</div>What did you do there exactly, Wang Mei?<div class="zh">王梅，你在那里具体做了什么？</div></div>
+<div class="line me"><div class="role">Wang Mei</div>I put books back on the shelves and read to younger children.<div class="zh">我把书放回书架，还给小一点的孩子读书。</div></div>
+<div class="line"><div class="role">Li Ming</div>That sounds interesting. Did you meet any difficulties?<div class="zh">听起来有意思。你遇到困难了吗？</div></div>
+<div class="line me"><div class="role">Wang Mei</div>At first I was not patient enough with the noisy children.<div class="zh">刚开始我对吵闹的孩子不够耐心。</div></div>
+<div class="line"><div class="role">Miss Zhang</div>And what did you learn from that experience?<div class="zh">那你从这次经历里学到了什么？</div></div>
+<div class="line me"><div class="role">Wang Mei</div>I learned that listening is more important than talking.<div class="zh">我学到了倾听比说话更重要。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit06.svg" alt="单元6看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>社区图书馆的一个角落：一个女孩正把书放回书架，两个小孩子围坐在地毯上听故事，墙上贴着一张写着 Volunteers Welcome 的海报，桌上放着几摞书和一个写着 Story Time 的小牌子。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>一个女孩正在把书放回书架</td><td>Maybe the girl is a volunteer, because there is a volunteers poster on the wall.</td></tr>
+<tr><td>两个小孩子围坐在地毯上</td><td>I think the children are enjoying the story, because they are sitting very close.</td></tr>
+<tr><td>墙上贴着一张 Volunteers Welcome 的海报</td><td></td></tr>
+<tr><td>桌上放着几摞书</td><td></td></tr>
+<tr><td>桌上有一个写着 Story Time 的小牌子</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>What volunteer work would you like to try in your community?</div>
+<div class="note"><b>无法确认：</b>我们听不到故事的内容，也看不出女孩多大年纪</div>
+<div class="note"><b>本单元语言点：</b>一般过去时讲经历 + I learned that... 说收获</div>
+<div class="note"><b>观察路线：</b>整体场景：社区图书馆的一个角落 → 人物：志愿者女孩和两个小孩子 → 动作：放回书架、坐在地毯上听故事 → 位置：海报在墙上，书和小牌子在桌上 → 关键细节：Volunteers Welcome 的海报和 Story Time 的牌子 → 合理推断：Maybe... / I think... because → 个人回应：说说自己想尝试的志愿服务</div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出人物和物品：volunteer、books、shelf、children、poster</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：The girl is ___ing the books. / There is a ___ on the wall.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 library / books / children / poster / story，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;书架—女孩—地毯上的孩子—墙上&quot;的顺序说 6-8 句，加一个 I think... because</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答两个追问：What does a volunteer do here? Would you like to try?</td></tr>
+</table>
+<div class="note"><b>句框：</b>The girl is putting the books back on the ___.<br>Two children are sitting on the ___ together.<br>I think they are enjoying the ___, because ___.<br>I learned that ___ is more important than ___.</div>
+<div class="note"><b>提问阶梯：</b>What can you see in this library corner?<br>What is the girl doing with the books?<br>Where are the two small children?<br>Why is there a volunteers poster on the wall?<br>What volunteer work would you like to do? Why?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的都是图里能看到的东西</td><td>凭空加没看到的细节</td></tr>
+<tr><td>顺序清楚</td><td>按从书架到墙面依次说</td><td>跳来跳去</td></tr>
+<tr><td>句子完整</td><td>用一般过去时和 I learned that 完整句</td><td>只说单词</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think... because 说明</td><td>直接下结论不给理由</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>The Girl Who Read Aloud</b><br>Wang Mei wanted to do volunteer work during the winter holiday.<br>The community library gave her a small corner every morning.<br>At first, only two children came to listen to her stories.<br>She read slowly and used funny voices for every animal.<br>More children came the next day and sat on the floor.<br>One very shy girl began to read aloud by herself.<br>Wang Mei said it was the best holiday she ever had.</div>
+<div class="note"><b>中文大意：</b>王梅想在寒假里做志愿服务，社区图书馆每天早上给她留了一个小角落。开始只有两个孩子来听她讲故事。她读得很慢，还给每个动物配上好玩的声音。第二天来了更多孩子，坐在地板上。一个很害羞的女孩开始自己大声朗读。王梅说那是她过得最好的一个假期。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>王梅和社区图书馆的孩子们</td></tr>
+<tr><td>想要什么</td><td>想把书里的故事读给更多孩子听</td></tr>
+<tr><td>遇到问题</td><td>一开始只有两个孩子来听</td></tr>
+<tr><td>如何解决</td><td>她放慢语速，用不同的声音讲故事</td></tr>
+<tr><td>结果与变化</td><td>孩子越来越多，还有个害羞的女孩开始自己朗读</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Wang Mei wanted to do volunteer work in the holiday. → The library gave her a small corner. → Only two children came at first. → She used funny voices for the animals. → More children came the next day. → One shy girl read aloud by herself.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>More children came the next day.<br>Wang Mei wanted to do volunteer work in the holiday.<br>She used funny voices for the animals.<br>Only two children came at first.</div>
+<div class="note"><b>关键词：</b>volunteer / library / corner / stories / voices / shy</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读关键句：She read slowly and used funny voices.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补人物和动作：At first, only ___ children came to ___.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 volunteer / library / stories / voices / shy，按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看着故事地图（谁—想做什么—问题—结果）自己讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题《The Girl Who Read Aloud》独立复述，并加一句自己愿意做的一件志愿服务</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Wang Mei wanted to do ___ work in the holiday.<br>Then, only ___ children came to listen.<br>After that, she used funny ___ for the animals.<br>Finally, one shy girl read ___ by herself.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成那个害羞女孩的视角讲：A big girl read stories to us slowly.<br>说感受：王梅为什么觉得这是最好的假期？从故事里找一句证据<br>新结局：如果第一天一个孩子都没来，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db6">请你扮演社区中心的志愿者负责人，和我六年级的孩子练习&quot;志愿服务&quot;。规则：1）每次只问一个问题，问完等他回答，再追问 Why? 和 What did you learn?；2）答对先用中文夸具体的地方，再说下一句；3）答不出先给中文提示，还不行给完整句让他跟读两遍；4）要求他用一般过去时讲清楚&quot;做了什么、遇到什么困难、学到什么&quot;；5）句子有语法错误不要说&quot;错&quot;，把正确句子完整说一遍让他跟读；6）最后用中文总结：他的收获说清了没有、哪一句明天还要练。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db6").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u7">
+<h2>单元 7 · 梦想职业</h2>
+<div class="en">Dream Jobs</div>
+<div class="goal"><b>目标：</b>会说出自己梦想的职业和理由，能用 be going to 说打算，并讲清这个职业需要的技能</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit07.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit07.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>I want to be a scientist, because I love asking questions.<div class="zh">我想成为科学家，因为我喜欢提问。</div></li>
+<li>My dream job is to write interesting stories for young children.<div class="zh">我的梦想职业是给小孩子们写有趣的故事。</div></li>
+<li>A good teacher makes every student feel brave and curious.<div class="zh">好老师让每个学生都感到勇敢又好奇。</div></li>
+<li>What do you want to be in the future, Li Ming?<div class="zh">李明，你将来想做什么？</div></li>
+<li>She practises the piano for two hours every single evening.<div class="zh">她每天晚上练两个小时钢琴。</div></li>
+<li>I am going to study harder than I did last term.<div class="zh">这学期我要比上学期更努力地学习。</div></li>
+<li>He works hard, because he wants to help more people.<div class="zh">他工作很努力，因为他想帮助更多人。</div></li>
+<li>Every job needs skills that you can learn at school.<div class="zh">每一份工作都需要你在学校就能学到的技能。</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>dream <i>梦想</i></span>
+<span>job <i>工作</i></span>
+<span>scientist <i>科学家</i></span>
+<span>teacher <i>老师</i></span>
+<span>artist <i>画家</i></span>
+<span>cook <i>厨师</i></span>
+<span>skill <i>技能</i></span>
+<span>practise <i>练习</i></span>
+<span>helpful <i>有帮助的</i></span>
+<span>future <i>未来</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>My dream job is to write stories for young children.</li>
+<li>A good job needs both real skill and a warm heart.</li>
+<li>A scientist asks questions and never stops wondering.</li>
+<li>I want to be a teacher who makes lessons fun.</li>
+<li>The artist drew a picture of our old quiet street.</li>
+<li>A good cook makes simple food taste really wonderful.</li>
+<li>Every job needs skills that you can learn at school.</li>
+<li>You must practise every day to become really good.</li>
+<li>I want a job that is helpful to other people.</li>
+<li>What do you want to do in the future, Li Ming?</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Miss Zhang</div>Today is our career day. What do you want to be?<div class="zh">今天是我们的职业日。你们想做什么？</div></div>
+<div class="line me"><div class="role">Li Ming</div>I want to be a scientist and study the stars at night.<div class="zh">我想当科学家，晚上研究星星。</div></div>
+<div class="line"><div class="role">Miss Zhang</div>That is a big dream. Why do you like the stars?<div class="zh">那是个大梦想。你为什么喜欢星星？</div></div>
+<div class="line me"><div class="role">Li Ming</div>Because the sky is bigger and older than anything I know.<div class="zh">因为天空比我知道的任何东西都更大、更古老。</div></div>
+<div class="line"><div class="role">Wang Mei</div>I am going to be a teacher like my favourite Miss Zhang.<div class="zh">我要成为一名像我最喜欢的张老师那样的老师。</div></div>
+<div class="line me"><div class="role">Li Ming</div>What makes a good teacher in your opinion, Wang Mei?<div class="zh">王梅，你觉得什么才是好老师？</div></div>
+<div class="line"><div class="role">Wang Mei</div>A good teacher listens more than she talks to her students.<div class="zh">好老师倾听的时间比对学生的说教更多。</div></div>
+<div class="line me"><div class="role">Miss Zhang</div>Thank you. Both of you are going to work hard for it.<div class="zh">谢谢。你们俩都要为此努力。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit07.svg" alt="单元7看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>教室里的职业日海报展：墙上贴着四张手绘海报，分别画着科学家、老师、医生和厨师，桌前站着两个孩子正在讲自己的理想，桌上摆着一个地球仪和一顶黄色的安全帽。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>墙上贴着四张手绘海报</td><td>Maybe today is a career day, because the posters show different jobs.</td></tr>
+<tr><td>海报上画着科学家、老师、医生和厨师</td><td>I think the children feel excited, because they are both talking at once.</td></tr>
+<tr><td>桌前站着两个孩子</td><td></td></tr>
+<tr><td>桌上摆着一个地球仪</td><td></td></tr>
+<tr><td>桌上还有一顶黄色的安全帽</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>What do you want to be in the future? Why?</div>
+<div class="note"><b>无法确认：</b>我们听不到他们在说什么，也看不出海报上写了哪些字</div>
+<div class="note"><b>本单元语言点：</b>I want to be... because... / be going to 说打算</div>
+<div class="note"><b>观察路线：</b>整体场景：教室里的职业日海报展 → 人物：两个正在发言的孩子 → 动作：贴海报、讲解、摆道具 → 位置：海报在墙上，地球仪和安全帽在桌上 → 关键细节：四种职业的海报和黄色安全帽 → 合理推断：Maybe... / I think... because → 个人回应：说说自己将来的打算</div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出职业名称：scientist、teacher、doctor、cook、artist</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：There is a ___ on the wall. / I want to be a ___.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 posters / jobs / globe / helmet / dream，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;墙上的海报—桌前的孩子—桌上的道具&quot;的顺序说 6-8 句，加一个 I think... because</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答两个追问：Which job do you like best? Why?</td></tr>
+</table>
+<div class="note"><b>句框：</b>There are ___ posters on the wall.<br>I want to be a ___, because ___.<br>I am going to ___ hard for my dream.<br>I think the children feel ___, because ___.</div>
+<div class="note"><b>提问阶梯：</b>What can you see on the wall?<br>Which jobs are on the posters?<br>What is on the desk beside the globe?<br>How do the two children feel? Why do you think so?<br>What do you want to be in the future? Why?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的都是图里能看到的东西</td><td>凭空加没看到的职业</td></tr>
+<tr><td>顺序清楚</td><td>按从墙面到桌面依次说</td><td>跳来跳去</td></tr>
+<tr><td>句子完整</td><td>用 I want to be... because 完整句</td><td>只说职业单词</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think... because 说明</td><td>直接下结论不给理由</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>The Smallest Question</b><br>When Wang Mei was small, she asked why the sky was blue.<br>Nobody around her could answer that strange little question.<br>Last month she borrowed three books from the school library.<br>She read them slowly and wrote down every new word.<br>Then she did a small experiment with a glass of water.<br>She showed her class how light changes colour in water.<br>Her teacher said a real scientist was born that day.</div>
+<div class="note"><b>中文大意：</b>王梅小时候问过&quot;天空为什么是蓝的&quot;，身边没有人能回答这个奇怪的小问题。上个月她从学校图书馆借了三本书，慢慢地读，把每个生词都记下来。然后她用一杯水做了个小实验，还向全班演示光在水里怎么变色。她的老师说，那天诞生了一位真正的科学家。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>王梅和她的老师同学</td></tr>
+<tr><td>想要什么</td><td>想弄明白天空为什么是蓝的</td></tr>
+<tr><td>遇到问题</td><td>身边没人能回答这个问题</td></tr>
+<tr><td>如何解决</td><td>她借书、记词，又用一个杯子做实验</td></tr>
+<tr><td>结果与变化</td><td>她向全班演示成功，老师夸她是真正的科学家</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Wang Mei asked why the sky was blue. → Nobody could answer her question. → She borrowed three books from the library. → She wrote down every new word. → She did a small experiment with water. → She showed the class how light changes.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>She borrowed three books from the library.<br>Wang Mei asked why the sky was blue.<br>She showed the class how light changes.<br>She did a small experiment with water.</div>
+<div class="note"><b>关键词：</b>sky / question / books / words / water / scientist</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读关键句：She did a small experiment with a glass of water.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补物品和动作：She showed her class how ___ changes in ___.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 sky / question / books / water / scientist，按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看着故事地图（谁—想做什么—问题—结果）自己讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题《The Smallest Question》独立复述，并加一句自己想弄明白的问题</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Wang Mei asked why the ___ was blue.<br>Then, she borrowed three ___ from the library.<br>After that, she did an experiment with a glass of ___.<br>Finally, her teacher called her a real ___.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成老师的视角讲：One of my students did a small experiment today.<br>说感受：王梅为什么能被叫做科学家？从故事里找一句证据<br>新结局：如果图书馆借不到书，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db7">请你扮演一位做职业体验的向导，和我六年级的孩子练习&quot;梦想职业&quot;。规则：1）每次只问一个问题，问完等他回答，再追问 Why? 和 What skills do you need?；2）答对先用中文夸具体的地方，再说下一句；3）答不出先给中文提示，还不行给完整句让他跟读两遍；4）要求他讲清&quot;想做什么、为什么、需要练什么技能&quot;；5）句子有语法错误不要说&quot;错&quot;，把正确句子完整说一遍让他跟读；6）最后用中文总结：他的理由句说清了没有、哪一句明天还要练。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db7").innerText,this)'>复制这段指令</button>
+</div>
+<div class="card" id="u8">
+<h2>单元 8 · 毕业回忆</h2>
+<div class="en">School Memories</div>
+<div class="goal"><b>目标：</b>会讲小学六年里的一件难忘小事，能用一般过去时回忆，并说出感谢与对未来的打算</div>
+<div class="media">
+<div class="aud"><div class="mlabel">🎬 示例视频</div><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"><source src="media/unit08.mp4" type="video/mp4"></video></div>
+<div class="aud"><div class="mlabel">🎧 示例对话音频</div><audio controls preload="none" src="media/unit08.mp3"></audio></div>
+</div>
+<h3>🔑 核心句（关键练习）</h3><ol class="sent">
+<li>I spent six happy years in this old but warm primary school.<div class="zh">我在这所旧却温暖的小学度过了六年快乐时光。</div></li>
+<li>We are going to graduate from primary school this coming July.<div class="zh">今年七月我们就要小学毕业了。</div></li>
+<li>My classmates helped me a lot when I hurt my left leg.<div class="zh">我左腿受伤的时候，同学们帮了我很多。</div></li>
+<li>We made a class album with photos and short handwritten notes.<div class="zh">我们用照片和手写的短留言做了一本班级纪念册。</div></li>
+<li>Saying goodbye is harder than I ever thought before.<div class="zh">说再见比我以前想象的更难。</div></li>
+<li>I am going to write thank-you cards to all my teachers.<div class="zh">我打算给所有老师写感谢卡。</div></li>
+<li>I still remember the day we planted those young trees together.<div class="zh">我还记得我们一起种下那些小树的那天。</div></li>
+<li>We promised to meet again in this classroom in ten years.<div class="zh">我们约定十年后还在这间教室见面。</div></li>
+</ol>
+<h3>📚 本单元词汇</h3><div class="vocab">
+<span>memory <i>回忆</i></span>
+<span>graduate <i>毕业</i></span>
+<span>primary school <i>小学</i></span>
+<span>classmate <i>同学</i></span>
+<span>playground <i>操场</i></span>
+<span>album <i>纪念册</i></span>
+<span>goodbye <i>告别</i></span>
+<span>thankful <i>感激的</i></span>
+<span>promise <i>约定</i></span>
+<span>remember <i>记得</i></span>
+</div>
+<details><summary>词汇例句</summary><div class="body"><ol class="sent">
+<li>This old photo brings back a happy memory of our class.</li>
+<li>We are going to graduate from primary school this July.</li>
+<li>I spent six happy years in this small primary school.</li>
+<li>My classmates helped me when I hurt my left leg.</li>
+<li>We played football on the playground every Friday afternoon.</li>
+<li>We made a class album with photos and short notes.</li>
+<li>Saying goodbye is much harder than I thought before.</li>
+<li>I am thankful for every kind teacher in my school life.</li>
+<li>We promised to meet again in this classroom in ten years.</li>
+<li>I still remember the day we planted those young trees.</li>
+</ol></div></details>
+<h3>💬 情景对话</h3><div class="dlg">
+<div class="line"><div class="role">Miss Zhang</div>We are going to say goodbye to this school next month.<div class="zh">下个月我们就要和这所学校说再见了。</div></div>
+<div class="line me"><div class="role">Wang Mei</div>I do not want to leave. Six years went so fast.<div class="zh">我不想离开。六年过得太快了。</div></div>
+<div class="line"><div class="role">Li Ming</div>I still remember the day we planted those small trees.<div class="zh">我还记得我们种下那些小树的那天。</div></div>
+<div class="line me"><div class="role">Miss Zhang</div>They are much taller than you were back then.<div class="zh">它们比你们那时候高多了。</div></div>
+<div class="line"><div class="role">Wang Mei</div>What are you going to do before the last day of school?<div class="zh">在最后一天上学前，你打算做什么？</div></div>
+<div class="line me"><div class="role">Li Ming</div>I am going to write thank-you cards to all our teachers.<div class="zh">我打算给所有老师写感谢卡。</div></div>
+<div class="line"><div class="role">Wang Mei</div>Good idea. I will make a class album with our old photos.<div class="zh">好主意。我要用我们的老照片做一本班级纪念册。</div></div>
+<div class="line me"><div class="role">Miss Zhang</div>Let us meet again in this classroom in ten years.<div class="zh">十年后我们在这间教室里再见吧。</div></div>
+</div>
+<details><summary>🖼️ 看图说话任务（P1–P5 分层）</summary><div class="body">
+<div style="text-align:center;margin:12px 0"><img src="img/unit08.svg" alt="单元8看图说话示意图" style="max-width:100%;border:2px solid #EADFB8;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)"></div>
+<div class="note"><b>图片描述：</b>教室里的毕业布置：黑板上写着 Class of 2026 Good Luck，墙上挂着一排六年来的班级照片，桌上放着一本打开的班级纪念册和一叠手写感谢卡，窗台上摆着几盆绿植。</div>
+<table><tr><th>可见事实</th><th>合理推断</th></tr>
+<tr><td>黑板上写着 Class of 2026 Good Luck</td><td>Maybe the children will leave soon, because the blackboard says good luck.</td></tr>
+<tr><td>墙上挂着一排班级照片</td><td>I think they spent many years together, because there is a long line of photos.</td></tr>
+<tr><td>桌上放着一本打开的纪念册</td><td></td></tr>
+<tr><td>桌上还有一叠手写感谢卡</td><td></td></tr>
+<tr><td>窗台上摆着几盆绿植</td><td></td></tr>
+</table>
+<div class="note"><b>个人联想：</b>Which school memory will you keep for the rest of your life?</div>
+<div class="note"><b>无法确认：</b>我们看不出照片里拍的是什么活动，也看不清感谢卡上写了什么</div>
+<div class="note"><b>本单元语言点：</b>一般过去时回忆 + be going to 说打算</div>
+<div class="note"><b>观察路线：</b>整体场景：布置好的毕业教室 → 人物：即将毕业的孩子们和老师 → 动作：写感谢卡、做纪念册、挂照片 → 位置：字在黑板上，照片在墙上，纪念册在桌上 → 关键细节：Class of 2026 和那叠手写感谢卡 → 合理推断：Maybe... / I think... because → 个人回应：说说自己最想留住的一段回忆</div>
+<table><tr><th>层级</th><th>任务要求</th></tr>
+<tr><td><b>P1</b></td><td>说出毕业场景的东西：blackboard、photos、album、cards、plants</td></tr>
+<tr><td><b>P2</b></td><td>用句框说 3-4 句：There are ___ on the wall. / I can see a ___ on the desk.</td></tr>
+<tr><td><b>P3</b></td><td>只看关键词 photos / album / cards / goodbye / six years，说 5-6 句</td></tr>
+<tr><td><b>P4</b></td><td>按&quot;黑板—墙上—桌面—窗台&quot;的顺序说 6-8 句，加一个 I think... because</td></tr>
+<tr><td><b>P5</b></td><td>独立说完，再回答两个追问：What will you do before you leave? Why?</td></tr>
+</table>
+<div class="note"><b>句框：</b>The blackboard says &quot;___&quot; in big letters.<br>There is a line of ___ on the wall.<br>I am going to write ___ to my teachers.<br>I think they spent ___ years together.</div>
+<div class="note"><b>提问阶梯：</b>What can you see in this classroom?<br>What does the blackboard say?<br>Where are the class photos?<br>Why are there thank-you cards on the desk?<br>What memory do you want to keep from your school?</div>
+<table><tr><th>维度</th><th>达标</th><th>需要支持</th></tr>
+<tr><td>事实准确</td><td>说的都是图里能看到的东西</td><td>凭空加没看到的细节</td></tr>
+<tr><td>顺序清楚</td><td>按从黑板到窗台依次说</td><td>跳来跳去</td></tr>
+<tr><td>句子完整</td><td>用一般过去时和 be going to 完整句</td><td>只说单词</td></tr>
+<tr><td>推断有证据</td><td>用 Maybe / I think... because 说明</td><td>直接下结论不给理由</td></tr>
+</table></div></details>
+<details><summary>📖 故事复述与表达（L1–L5 支架）</summary><div class="body">
+<div class="note"><b>The Thank-you Card</b><br>On the last day of school, Li Ming sat alone in the classroom.<br>He opened a small blue card and thought about his teacher.<br>He remembered the rainy afternoon she shared her umbrella with him.<br>He also remembered the long hour she spent helping him read.<br>He wrote two short lines and drew a small tree beside them.<br>Then he put the card on her desk and ran out happily.<br>The next morning, she wrote back: thank you for remembering.</div>
+<div class="note"><b>中文大意：</b>在学校的最后一天，李明一个人坐在教室里。他打开一张蓝色的小卡片，想起了自己的老师。他记得那个下雨的下午，老师把伞分给他一半；也记得老师花很长时间陪他读书。他写了两行短话，旁边画了一棵小树，然后把卡片放在老师的桌上，开心地跑了出去。第二天早上，老师回信说：谢谢你记得。</div>
+<table><tr><th>故事地图</th><th>内容</th></tr>
+<tr><td>人物与情境</td><td>李明和他的老师</td></tr>
+<tr><td>想要什么</td><td>想在毕业前说一句谢谢</td></tr>
+<tr><td>遇到问题</td><td>不知道怎么把感谢说出口</td></tr>
+<tr><td>如何解决</td><td>他写下一张卡片，画了一棵小树</td></tr>
+<tr><td>结果与变化</td><td>老师第二天回信，两个人都很温暖</td></tr>
+</table>
+<div class="note"><b>事件顺序：</b>Li Ming sat alone in the classroom on the last day. → He opened a small blue card. → He remembered two kind moments with his teacher. → He wrote two lines and drew a small tree. → He put the card on her desk. → His teacher wrote back the next morning.</div>
+<div class="note"><b>排序练习（顺序已打乱）：</b>He put the card on her desk.<br>Li Ming sat alone in the classroom on the last day.<br>His teacher wrote back the next morning.<br>He remembered two kind moments with his teacher.</div>
+<div class="note"><b>关键词：</b>last day / card / umbrella / tree / desk / thank you</div>
+<table><tr><th>支架</th><th>做法</th></tr>
+<tr><td><b>L1</b></td><td>看图跟读关键句：He put the card on his teacher&#x27;s desk.</td></tr>
+<tr><td><b>L2</b></td><td>用句框补人物和动作：He remembered the ___ afternoon with his ___.</td></tr>
+<tr><td><b>L3</b></td><td>只看关键词 card / umbrella / tree / desk / thank you，按顺序说完整句</td></tr>
+<tr><td><b>L4</b></td><td>看着故事地图（谁—想做什么—问题—结果）自己讲一遍</td></tr>
+<tr><td><b>L5</b></td><td>只看标题《The Thank-you Card》独立复述，并加一句自己想感谢的人和理由</td></tr>
+</table>
+<div class="note"><b>连接词句框：</b>First, Li Ming sat alone in the ___ on the last day.<br>Then, he remembered two ___ moments with his teacher.<br>After that, he drew a small ___ beside his words.<br>Finally, his teacher ___ back the next morning.</div>
+<div class="note"><b>迁移表达：</b><br>换视角：换成老师的视角讲：A student left a blue card on my desk.<br>说感受：李明为什么开心地跑出去？从故事里找一句证据<br>新结局：如果李明当面说谢谢，故事会怎么变？</div>
+</div></details>
+<h3>🤖 豆包陪练指令（本单元）</h3>
+<div class="prompt" id="db8">请你扮演一位来做毕业采访的校刊记者，和我六年级的孩子练习&quot;毕业回忆&quot;。规则：1）每次只问一个问题，问完等他回答，再追问 When was that? 和 How did you feel?；2）答对先用中文夸具体的地方，再说下一句；3）答不出先给中文提示，还不行给完整句让他跟读两遍；4）要求他用一般过去时讲一件小学小事，再用 be going to 说毕业前的打算；5）句子有语法错误不要说&quot;错&quot;，把正确句子完整说一遍让他跟读；6）最后用中文总结：过去式用得怎么样、哪一句明天还要练。</div>
+<button class="copybtn" onclick='cp(document.getElementById("db8").innerText,this)'>复制这段指令</button>
+</div>
+<div class="sect" id="placement"><h2>🎯 口语诊断与分级（起始层级测评）</h2>
+<div class="note"><b>测评条件：</b>六年级学生，1 对 1，15-18 分钟，中教或外教均可，用于入学分班、小升初衔接或学期复测</div>
+<div class="note"><b>低压力开场白（可直接念给孩子）：</b>这不是考试，说错也没关系。想不起来的时候可以说 &quot;I am not sure&quot;，也可以让我换个说法再问一次。我想看看哪些话题你能自己说一段，哪些还需要我帮你搭把手。</div>
+<h3>六段任务</h3><table><tr><th>任务</th><th>教师指令</th><th>支架递减</th><th>观察什么</th></tr>
+<tr><td>课堂指令</td><td>Please tell me about one unforgettable experience in six sentences.</td><td>等待→重复→给句框</td><td>能不能听懂多步指令并组织成段</td></tr>
+<tr><td>个人回答</td><td>What do you want to be in the future? Why?</td><td>等待→二选一→句框</td><td>能不能用完整句回答并给出理由</td></tr>
+<tr><td>图片描述</td><td>Look at this picture. What can you see? What is happening?</td><td>等待→追问细节→关键词</td><td>能不能说出场景、动作、细节和一个推断</td></tr>
+<tr><td>互动问答</td><td>Do you think volunteering is important for students? Why or why not?</td><td>等待→追问 Can you say more?</td><td>能不能表达看法并回应对方观点</td></tr>
+<tr><td>连续表达</td><td>Tell me about your primary school life in six sentences.</td><td>等待→关键词→时间轴</td><td>能不能连说 6 句，时态一致、有连接词</td></tr>
+<tr><td>情景任务</td><td>你要给即将上初一的学弟学妹讲三个准备建议，请用英文说 1 分钟。</td><td>等待→角色扮演→示范</td><td>能不能完成一次 5 轮以上的成段表达</td></tr>
+</table>
+<h3>六维表现记录（0–3 级）</h3><table><tr><th>维度</th><th>0级</th><th>1级</th><th>2级</th><th>3级</th></tr>
+<tr><td>指令理解</td><td>听不懂也不做</td><td>需要看示范才跟着做</td><td>需要重复或简化后能做</td><td>立刻能做并主动追问</td></tr>
+<tr><td>句子完整度</td><td>只说单词</td><td>能说 3-5 个词的短语</td><td>能说简单完整句</td><td>能说带从句或理由的复合句</td></tr>
+<tr><td>互动回应</td><td>不回应</td><td>只回答 Yes / No</td><td>能回答并补充一句</td><td>能回答、反问并回应对方</td></tr>
+<tr><td>连续表达</td><td>说不出</td><td>说 1-2 句</td><td>说 3-5 句</td><td>能说 6 句以上，有连接词、时态一致</td></tr>
+<tr><td>任务完成</td><td>完不成</td><td>需要全程示范</td><td>需要部分提示或句框</td><td>能独立完成并自我修正</td></tr>
+<tr><td>独立程度</td><td>必须跟读</td><td>需要句框</td><td>需要关键词或故事地图</td><td>只看问题或图片就能成段说</td></tr>
+</table>
+<h3>内部起始层级 S1–S5</h3><table><tr><th>层级</th><th>含义</th></tr>
+<tr><td><b>S1</b></td><td>模仿表达：主要靠示范、图片和跟读，能跟说单词和短句</td></tr>
+<tr><td><b>S2</b></td><td>句框表达：能用固定句型完成熟悉问答，如 I am going to visit my grandparents.</td></tr>
+<tr><td><b>S3</b></td><td>互动表达：能回答、提问并补充理由或细节</td></tr>
+<tr><td><b>S4</b></td><td>连续表达：能围绕熟悉话题连续说 5-6 句，时态基本稳定，并完成角色任务</td></tr>
+<tr><td><b>S5</b></td><td>迁移表达：能说明理由、回应不同观点，并在新情境里组织成段表达</td></tr>
+</table>
+<div class="note">这是机构内部层级，用于决定"从哪里开始学"，不等于剑桥、CEFR 或校内官方等级。</div>
+<h3>前 4 课建议</h3><table><tr><th>课次</th><th>口语目标</th><th>核心任务</th><th>支架</th><th>学习证据</th></tr>
+<tr><td>第1课</td><td>能说清经历</td><td>用一般过去时讲一次难忘的经历</td><td>时间轴 + 关键词</td><td>能连说 5 句，过去式基本正确</td></tr>
+<tr><td>第2课</td><td>能说清理由</td><td>练 I think... because... / ...er than... 说看法和比较</td><td>追问链 + 句框</td><td>能说出 4 句带理由和比较的句子</td></tr>
+<tr><td>第3课</td><td>能成段表达</td><td>用 be going to 说初中准备和梦想打算</td><td>问题卡 + 句框递减</td><td>能独立完成 5 句的计划表达</td></tr>
+<tr><td>第4课</td><td>能完成真实任务</td><td>给学弟学妹讲三个准备建议并回答提问</td><td>角色卡 + 关键词</td><td>能完成 1 分钟成段表达并回答 3 个提问</td></tr>
+</table>
+<div class="note"><b>给家长的说明：</b>这次只是看看孩子现在&quot;能独立完成什么、需要什么帮助&quot;，不是打分，也不代表孩子的英语水平就定下来了。六年级孩子多数在 S3 到 S4 之间：熟悉话题能答上几句，但一让说理由就容易只说半句，一讲经历就容易时态前后不一致。我们前 4 课重点练&quot;说经历&quot;&quot;说理由&quot;&quot;说打算&quot;和&quot;成段表达&quot;，4 课后会用同样的任务再看一次，重点看理由句是不是更完整、过去式是不是更稳。</div>
+</div>
+<div class="sect" id="project"><h2>🗺️ 主题口语项目</h2>
+<div class="note"><b>给初一新生的英语准备锦囊</b>（访谈 + 准备建议短讲）</div>
+<div class="note"><b>真实受众：</b>本校即将升入初一的学弟学妹</div>
+<div class="note"><b>驱动任务：</b>我们如何用英语向即将上初一的学弟学妹讲清&quot;初中生活的三个准备建议&quot;，让他们开学第一周不那么慌？</div>
+<div class="note"><b>最终口语作品：</b>一段 3 分钟的英文短讲：讲一件小学往事、给出三个准备建议并说明理由、回答听众 3 个提问</div>
+<table><tr><th>课次</th><th>里程碑</th><th>学生口语任务</th><th>支架</th><th>阶段证据</th></tr>
+<tr><td>1</td><td>Launch</td><td>用一般过去时说出小学里最有用的一件小事</td><td>老照片 + 关键词卡</td><td>能说出 1 件有细节的小事</td></tr>
+<tr><td>2</td><td>Explore</td><td>听一段示范短讲，找出&quot;往事—建议—理由&quot;三步</td><td>示范录音</td><td>能说出短讲包含的三部分和用到的时态</td></tr>
+<tr><td>3</td><td>Language workshop</td><td>练 I still remember... / You are going to... / I think... because... 三组句框</td><td>句框 + 追问链</td><td>能用三组句框各说 2 句，并补上 because</td></tr>
+<tr><td>4</td><td>Publish</td><td>向学弟学妹/家长做完整短讲并回答提问</td><td>关键词卡</td><td>完成 3 分钟短讲 + 3 个问答</td></tr>
+</table>
+<h3>小组角色（人人都要开口）</h3><table><tr><th>角色</th><th>口语职责</th><th>完成证据</th></tr>
+<tr><td>speaker</td><td>负责讲往事、三个建议和理由三段内容</td><td>能完整说出 3 段，每段 3 句以上</td></tr>
+<tr><td>interviewer</td><td>负责在短讲后提出 3 个问题并把话筒传给听众</td><td>能完成 2 次介绍并转述 1 个提问</td></tr>
+<tr><td>evidence keeper</td><td>记录同伴用了几个过去式、几句 because</td><td>能说出同伴的一个进步和一句建议</td></tr>
+</table>
+<div class="note"><b>语言支架包：</b>I still remember the day we ___ together in Grade ___.<br>My first tip is: you are going to ___ every morning.<br>I think this is important, because ___.<br>Can you say that again, please? / What do you mean by ___?</div>
+<table><tr><th>维度</th><th>4级</th><th>3级</th><th>2级</th><th>1级</th></tr>
+<tr><td>任务完成</td><td>独立完成三段并答对提问</td><td>完成三段但需提示</td><td>只完成 1-2 段</td><td>只能念稿</td></tr>
+<tr><td>清晰表达</td><td>句子完整、时态一致、有连接词</td><td>基本听懂，偶有时态错误</td><td>需要重复才听懂</td><td>难以听懂</td></tr>
+<tr><td>互动回应</td><td>主动回应提问并给出理由</td><td>能答能问</td><td>只回答不提问</td><td>不回应</td></tr>
+<tr><td>减少支架</td><td>只看关键词卡就能成段说</td><td>看句框能说</td><td>需要老师带着说</td><td>只能跟读</td></tr>
+</table>
+<div class="note"><b>家长展示：</b>展示孩子那段 3 分钟的短讲录音和一张小学老照片。说明这 4 次课练了什么、孩子从&quot;看句框&quot;到&quot;看关键词&quot;的变化，以及讲过去的事时过去式是不是更稳。不夸大：这是开口练习的成果，不代表孩子已经达到某个等级。</div>
+</div>
+<div class="sect" id="feedback"><h2>💬 口语反馈助手（孩子 / 老师 / 家长三版）</h2>
+<div class="note"><b>本次目标：</b>本单元目标：能用一般过去时讲一次难忘的经历，并用 ...er than 比较两处感受</div>
+<div class="note"><b>证据说明：</b>可以确认：句子是否完整、过去式用得对不对、比较级结构对不对、能不能回答追问。暂时无法判断：文字转写无法反映真实发音、语调和流利度。</div>
+<h3>给孩子的反馈</h3><table>
+<tr><th>你做到了</th><td>你今天用 We reached the top of the hill at six in the morning. 把结果说清楚了，而且自己加了一句 The sunrise was more beautiful than anything in my photos.</td></tr>
+<tr><th>小小升级点</th><td></td></tr>
+<tr><th>示范表达</th><td>We reached the top of the hill at six in the morning. I wanted to stop halfway up the mountain. The sunrise was more beautiful than anything in my photos.</td></tr>
+<tr><th>跟我再说一次</th><td>用这个句框再说一次：We ___ last ___. I wanted to ___ halfway. The ___ was ___er than ___.</td></tr>
+<tr><th>下一次目标</th><td>下一次目标：不看句框，连着说 6 句，把&quot;什么时候、和谁、多难、结果、感受、收获&quot;说全。</td></tr>
+</table>
+<h3>给老师的教学建议</h3><table>
+<tr><th>保留</th><td>保留：细节讲得具体，愿意主动补充比较。</td></tr>
+<tr><th>优先改进</th><td>优先改进：一段话里过去式容易前后不一致（reached 之后又用 reach）。</td></tr>
+<tr><th>下一课动作</th><td>下一课动作：先口头用时间轴过一遍动词过去式，再进短讲稿。</td></tr>
+<tr><th>推荐支架</th><td>推荐支架：时间轴卡（last summer / after three hours / then / finally）+ 关键词卡（climbed / heavy / top）。</td></tr>
+<tr><th>继续观察</th><td>继续观察：换一个话题时（比如讲一次志愿服务），过去式还能不能保持住。</td></tr>
+</table>
+<h3>给家长的学习反馈</h3><table>
+<tr><th>本次任务</th><td>本次完成了&quot;讲一次难忘的经历并比较两处感受&quot;这个任务。</td></tr>
+<tr><th>孩子实际说出</th><td>孩子实际说出了：We reached the top of the hill at six in the morning.</td></tr>
+<tr><th>值得肯定的变化</th><td>最值得肯定的变化：从只说 climbed、top 几个词，到能连说 3 句完整句。</td></tr>
+<tr><th>下一步只练</th><td>下一步只练一件事：讲过去的事时，先把动词过去式一个个说准。</td></tr>
+</table>
+<h3>3 分钟家庭开口练习</h3><ol class="sent"></ol>
+</div>
+<div class="sect" id="prompts"><h2>🤖 豆包 AI 陪练指令包</h2>
+<div class="note">复制下面任意一条，粘贴到豆包对话框即可开始陪练。</div>
+<h3>通用指令 1</h3><div class="prompt" id="g1">请你当我孩子的英语陪练。规则：一次只说一句英文，语速中等；孩子答对先用中文夸具体的地方，再追问一句 Why? 或 Can you say more?；答不出先给中文提示，还不行就给完整句让他跟读两遍；句子有语法错误不要说&quot;错&quot;，把正确句子完整说一遍让他跟读；每练 8 句用中文总结一次今天会说什么、哪两句还要再练。</div>
+<button class="copybtn" onclick='cp(document.getElementById("g1").innerText,this)'>复制</button>
+<h3>通用指令 2</h3><div class="prompt" id="g2">请你扮演一位爱聊天的外国笔友，和我六年级的孩子用英文聊生活。每次只问一个问题，问完等他回答，并追问一次 Why? 和一次 What about you?。他答不上来时用中文给他两个选项。聊满 12 个来回后，用中文告诉我他的理由句说得怎么样、哪些话题还说不下去。</div>
+<button class="copybtn" onclick='cp(document.getElementById("g2").innerText,this)'>复制</button>
+<h3>通用指令 3</h3><div class="prompt" id="g3">请你当英语跟读老师。我发一段 3-5 句的英文，你先用正常语速读一遍，再慢速读一遍，最后用中文解释意思。读完让孩子跟读三遍，你听完（我转述他的发音）给一句具体鼓励和一个小建议，不要说&quot;很好&quot;这种空话。</div>
+<button class="copybtn" onclick='cp(document.getElementById("g3").innerText,this)'>复制</button>
+<h3>通用指令 4</h3><div class="prompt" id="g4">我们来玩&quot;图片描述&quot;游戏。我描述一张图片给你，你扮演老师，用 What can you see? / What is happening? / How do they feel? / Why do you think so? 依次提问，每次只问一个。要求他至少说 8 句，用一个 I think... because 做推断，并至少用一次比较级。</div>
+<button class="copybtn" onclick='cp(document.getElementById("g4").innerText,this)'>复制</button>
+<h3>通用指令 5</h3><div class="prompt" id="g5">请你当故事复述教练。我先讲一个英文小故事，你帮孩子按 First... Then... After that... Finally... 的顺序复述一次，然后让他照着说，注意动词过去式。他漏掉关键事件时用一个问题提示他，比如 What did they do first?；最后让他加一句自己的看法。</div>
+<button class="copybtn" onclick='cp(document.getElementById("g5").innerText,this)'>复制</button>
+<h3>通用指令 6</h3><div class="prompt" id="g6">请你给孩子做一次单元小测。围绕本单元的 8 句核心句，随机抽 5 句问他中文让他翻译成英文，或者你说英文让他翻译中文，每题再追一句 Why? 或 What about you?。5 题结束后用中文总结：会了几句、哪两句还要再练、过去式和比较级用得怎么样、建议明天练什么。</div>
+<button class="copybtn" onclick='cp(document.getElementById("g6").innerText,this)'>复制</button>
+</div>
+<footer>本产品由 AI 辅助整理、人工审校，仅供购买者个人学习使用，请勿转售或外传。</footer>
+</div><div class="toast" id="toast"></div>
+
+<script>
+function cp(t,btn){navigator.clipboard.writeText(t).then(()=>{
+  const o=btn.textContent;btn.textContent="已复制 ✓";setTimeout(()=>btn.textContent=o,1500);
+});}
+</script>
+
+</body></html>
